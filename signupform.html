@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="signupform.css">
+
+<script>
+    $(document).ready(function(){
+      $("#h").click(function(){
+        alert("You'll be redirected to Home!");
+      });
+    });
+
+    $( "#target" ).click(function() {
+  alert( "Handler for .click() called." );
+});
+</script>
+</head>
+<body ng-app="app1">
+
+
+<div class="topnav">
+  <a href="#home" class="active">Sign Up Form</a>
+  <div id="myLinks">
+    <a href="Loginpagecb.html" id="h">Home</a>
+    <a href="maincb.html">About</a>
+    <a href="footer">Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<br>
+<br>
+<form name="feedbackForm" class="elegant-aero">
+  <label>First Name:</label>
+  <input type="text" name="userFirstName" ng-model="firstName" required />
+  <div ng-messages="feedbackForm.userFirstName.$error">
+    <div ng-message="required"></div>
+  </div>
+
+  <label>Last Name:</label>
+  <input type="text" name="userLastName" ng-model="lastName" required />
+  <div ng-messages="feedbackForm.userLastName.$error">
+    <div ng-message="required"></div>
+  </div>
+
+  <label>Student Email Address:</label>
+  <input type="email" name="userEmail" ng-model="email" ng-pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/" required />
+  <div ng-messages="feedbackForm.userEmail.$error">
+    <div ng-message="required"></div>
+    <div ng-message="email"></div>
+  </div>
+
+  <label>Phone Number:</label>
+  <input type="Number" name="userPhoneNumber" ng-model="phoneNumber" ng-pattern="/[0-9]$/" required/>
+  <div ng-messages="feedbackForm.userPhoneNumber.$error">
+    <div ng-message="required"></div>
+    <div ng-message="pattern"></div>
+  </div>
+
+  <label>User Message:</label>
+  <textarea type="text" name="userMessage" class="form-control" rows="3" ng-model="message" ng-minlength="100" ng-maxlength="1000" required></textarea>
+  <div ng-messages="feedbackForm.userMessage.$error">
+    <div ng-message="required" id="req"></div>
+    <div ng-message="minlength"></div>
+    <div ng-message="maxlength"></div>
+  </div>
+  <input type="submit" value="Submit" id="target">
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-messages.min.js"></script>
+<div class="footer">
+    <div class="foot_l">
+        <p>Campus Buddy - Making student life  more sustainable </p>
+    </div>
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+
+.body{
+   background-color: Azure;
+   }
+
+.header h1 {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding-left: 2%;
+    color: #E56B6F;
+    font-size: 50px;
+}
+
+#logoutBtn {
+    padding: 0;
+    background-color: linear-gradient(Ivory, DogerBlue);
+    color: white;
+    border-radius: 15px;
+    width: 2.5em;
+    height: 2.25em;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#logoutBtn :hover {
+    background-color: #b56576;
+}
+
+form {
+    margin: 20px;
+}
+
+.whereDiv {
+    font-family: 'Helvetica', sans-serif;
+    background-color: MidnightBlue;
+    border-radius: 15px;
+    width: 60%;
+    border: 1px solid black;
+}
+
+h2 {
+    padding-left: 20px;
+    padding-top: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#find {
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 15px;
+    color: #FFFFFF;
+    background-color: RoyalBlue;
+    font-size: 20px;
+    font-family: inherit;
+    padding-top: 3px;
+}
+
+#find :active :hover {
+    background-color: #b56576;
+}
+
+#checkboxes {
+    font-family: 'Helvetica', sans-serif;
+    color: #FFFFFF;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    align-items:inherit;
+}
+
+input[type="text"],input[type="time"] {
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 1px;
+    background: #eef9fe;
+    border: 1px solid Navy;
+	font-size: 12px;
+    margin-block-end: 5px;
+}
+
+.fields {
+    font-family: 'Helvetica', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+#whereTo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h2 {
+    color:black;
+    font-family: 'Helvetica', sans-serif;
+
+}
+
+table th {
+    background-color: RoyalBlue;
+    border-bottom: 3px solid Indigo;
+    color: #FFFFFF;
+}
+
+table {
+    background-color: #FFFF;
+    border-collapse: collapse;
+    width: 70%;
+    font-family: 'Helvetica', sans-serif;
+    border: 2px solid black ;
+    align-self: center;
+}
+
+td {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid Indigo;
+    color: black;
+}
+
+.split {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    right: 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    left: 0;
+}
+
+.poolsFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}   
+
+#poolsIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#pools-found-tbl {
+    width: 80%;
+}
+
+#pools-in-tbl {
+    width: 80%;
+}
+
+#map {
+    border: 5px solid Navy;
+}
